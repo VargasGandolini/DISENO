@@ -56,3 +56,20 @@
   margin-right: 30px;
   color: #d1d1d1;
 }
+
+.titulo {
+  text-align: center;
+  color: #d1d1d1;
+}
+
+.formulario {
+  text-align: left;
+}
+
+.inputs {
+  display: flex;
+}
+
+.boton-contacto {
+  margin-top: 10px;
+}
