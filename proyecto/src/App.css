@@ -2,6 +2,7 @@
   text-align: center;
   background-color: #032142;
   color: #d1d1d1;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .App-logo {
@@ -72,4 +73,8 @@
 
 .boton-contacto {
   margin-top: 10px;
+}
+
+.fieldset {
+  text-align: left;
 }

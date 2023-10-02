@@ -61,10 +61,15 @@ const ContactForm = () => {
         </navbar>
       <div className='App'>
         <Container>
+          <div>
           <h2 className="Titulo">
-            Formulario de Contacto
+              Formulario de Contacto
           </h2>
-            <form onSubmit={handleSubmit} className="formulario">
+          <div className="formulario">
+            <legend>
+              Información de Contacto
+            </legend>
+            <form onSubmit={handleSubmit}>
               <div>
                 <label>Nombre:</label>
                 <input
@@ -112,6 +117,8 @@ const ContactForm = () => {
                 Enviar
               </button>
             </form>
+            </div>
+            </div>
         </Container>
       </div>
     </div>
