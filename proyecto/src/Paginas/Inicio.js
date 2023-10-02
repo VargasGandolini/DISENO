@@ -1,5 +1,5 @@
 import '../App.css'
-import { Carousel, Container } from 'react-bootstrap';
+import { Carousel, Container, Nav, Navbar} from 'react-bootstrap';
 import imagen1 from '../Imagenes/Imagen1.jpg' 
 import imagen2 from '../Imagenes/Imagen2.jpg' 
 import imagen3 from '../Imagenes/Imagen3.jpg' 
@@ -8,21 +8,22 @@ import imagen4 from '../Imagenes/Imagen4.jpg'
 function Inicio() {
   return (
     <div className='App'>
-        <header className='App-header'>
-            <h1>CLONES</h1>
-        </header>
-        <navbar className='barnav'>
-            <a href='/'>Inicio</a>
-            <a href='/nosotros'>Nosotros</a>
-            <a href='/quienes_somos'>Quienes_somos</a>
-            <a href='/imagenes'>Imagenes</a>
-            <a href='/contacto'>Contacto</a>
-        </navbar>
+      <Navbar className='navbar'>
+        <Container className='text-navbar'>
+          <Navbar.Brand style={{color:'#d1d1d1'}}>Clones</Navbar.Brand>
+          <Nav variant="underline" defaultActiveKey="/">
+            <Nav.Link href="/">Inicio</Nav.Link>
+            <Nav.Link href="/quienes_somos">Quienes Somos</Nav.Link>
+            <Nav.Link href="/nosotros">Nosotros</Nav.Link>
+            <Nav.Link href="/imagenes">Imagenes</Nav.Link>
+            <Nav.Link href="/Contacto">Contacto</Nav.Link>
+          </Nav>
+        </Container>
+      </Navbar>
     <div className='App'>
         <Container>
         <Carousel className='carrusel'>
             <Carousel.Item>
-                <a href='/quienes_somos'>
                 <img
                 className="imagen"
                 src={imagen1}
@@ -33,10 +34,8 @@ function Inicio() {
                         <h3>QUIENES SOMOS</h3>
                     </div>
                 </Carousel.Caption>
-                </a>
             </Carousel.Item>
             <Carousel.Item>
-                <a href='/nosotros'>
                     <img
                     className="imagen"
                     src={imagen2}
@@ -47,10 +46,8 @@ function Inicio() {
                             <h3>NOSOTROS</h3>
                         </div>
                 </Carousel.Caption>
-                </a>
             </Carousel.Item>
             <Carousel.Item>
-                <a href='/imagenes'>
                 <img
                 className="imagen"
                 src={imagen3}
@@ -61,10 +58,8 @@ function Inicio() {
                         <h3>IMAGENES</h3>
                     </div>
                 </Carousel.Caption>
-                </a>
             </Carousel.Item>
             <Carousel.Item>
-                <a href='contacto'>
                 <img
                 className="imagen"
                 src={imagen4}
@@ -75,7 +70,6 @@ function Inicio() {
                         <h3>CONTACTO</h3>
                     </div>
                 </Carousel.Caption>
-                </a>
             </Carousel.Item>
         </Carousel>
         </Container>

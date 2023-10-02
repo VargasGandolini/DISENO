@@ -53,13 +53,7 @@
   width: 90%;
 }
 
-.barnav a {
-  margin-right: 30px;
-  color: #d1d1d1;
-}
-
 .titulo {
-  text-align: center;
   color: #d1d1d1;
 }
 
@@ -69,6 +63,7 @@
 
 .inputs {
   display: flex;
+
 }
 
 .boton-contacto {
@@ -77,4 +72,12 @@
 
 .fieldset {
   text-align: left;
+}
+
+.navbar {
+  background-color: #032142;
+}
+
+.text-navbar a:hover{
+  color: #d1d1d1;
 }

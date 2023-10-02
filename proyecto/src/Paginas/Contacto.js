@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Container } from 'react-bootstrap';
+import { Carousel, Container, Nav, Navbar} from 'react-bootstrap';
 import '../App.css'
 
 const ContactForm = () => {
@@ -49,16 +49,18 @@ const ContactForm = () => {
 
   return (
     <div className='App'>
-      <header className='App-header'>
-        <h1>CLONES</h1>
-      </header>
-      <navbar className='barnav'>
-            <a href='/'>Inicio</a>
-            <a href='/nosotros'>Nosotros</a>
-            <a href='/quienes_somos'>Quienes_somos</a>
-            <a href='/imagenes'>Imagenes</a>
-            <a href='/contacto'>Contacto</a>
-        </navbar>
+      <Navbar className='navbar'>
+        <Container className='text-navbar'>
+          <Navbar.Brand style={{color:'#d1d1d1'}}>Clones</Navbar.Brand>
+          <Nav variant="underline" defaultActiveKey="/contacto">
+            <Nav.Link href="/">Inicio</Nav.Link>
+            <Nav.Link href="/quienes_somos">Quienes Somos</Nav.Link>
+            <Nav.Link href="/nosotros">Nosotros</Nav.Link>
+            <Nav.Link href="/imagenes">Imagenes</Nav.Link>
+            <Nav.Link href="/contacto">Contacto</Nav.Link>
+          </Nav>
+        </Container>
+      </Navbar>
       <div className='App'>
         <Container>
           <div>
