@@ -11,6 +11,13 @@ function Inicio() {
         <header className='App-header'>
             <h1>CLONES</h1>
         </header>
+        <navbar className='barnav'>
+            <a href='/'>Inicio</a>
+            <a href='/nosotros'>Nosotros</a>
+            <a href='/quienes_somos'>Quienes_somos</a>
+            <a href='/imagenes'>Imagenes</a>
+            <a href='/contacto'>Contacto</a>
+        </navbar>
     <div className='App'>
         <Container>
         <Carousel className='carrusel'>
@@ -74,7 +81,6 @@ function Inicio() {
         </Container>
         </div>
     </div>
-    
   );
 }
 

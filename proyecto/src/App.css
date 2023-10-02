@@ -51,3 +51,8 @@
 .imagen {
   width: 90%;
 }
+
+.barnav a {
+  margin-right: 30px;
+  color: #d1d1d1;
+}
